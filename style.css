@@ -1,0 +1,570 @@
+/* General Styling */
+body {
+    background: url('./images/Coffehub2.jpg') no-repeat center center/cover;
+    background-attachment: fixed;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a;
+    text-align: center;
+}
+
+/* Header Styling */
+header {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0px 4px 10px rgba(255, 153, 0, 0.5);
+}
+
+header h1 {
+    font-size: 24px;
+    color: #ffcc00;
+    text-align: center;
+    flex-grow: 1;
+}
+
+nav {
+    margin-right: -30px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #e9e8e4;
+    font-weight: 500;
+    transition: color 0.3s;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+}
+
+/* Parallax Home Section */
+.parallax {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.parallax h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+}
+
+/* Floating Button */
+.floating-btn {
+    background: #76582c;
+    border: none;
+    padding: 10px 18px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0px 4px 10px rgba(255, 153, 0, 0.5);
+    transition: 0.3s;
+}
+
+.floating-btn:hover {
+    background: #ffcc00;
+    transform: scale(1.05);
+}
+
+/* Menu Section */
+/* Menu Section */
+#menu {
+    padding: 60px 10%;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    background: none;
+}
+
+/* Menu Title */
+#menu h2 {
+    font-size: 36px;
+    color: #ffcc00;
+    position: relative;
+    animation: fadeInDown 1s ease-in-out;
+}
+
+/* Menu Slider */
+.menu-slider {
+    display: flex;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    width: 100%;
+    position: relative;
+    padding: 20px 0;
+}
+
+/* Menu Items */
+.menu-item {
+    min-width: 250px;
+    flex: 0 0 auto;
+    background: rgb(249, 249, 249);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(255, 153, 0, 0.3);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+    text-align: center;
+    color: rgb(12, 11, 11);
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+/* Menu Item Image */
+.menu-item img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0px 4px 10px rgba(255, 153, 0, 0.3);
+}
+
+/* Menu Item Hover Effect */
+.menu-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 15px rgba(255, 153, 0, 0.7);
+}
+
+/* Navigation Arrows */
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 204, 0, 0.8);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.arrow:hover {
+    background: #ffcc00;
+}
+
+.arrow-left {
+    left: 5px;
+}
+
+.arrow-right {
+    right: 5px;
+}
+
+
+/* Animation Keyframes */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* Product Section */
+#products {
+    padding: 100px 10%;
+    text-align: center;
+}
+
+#products h2 {
+    font-size: 36px;
+    color: #ffcc00;
+    margin-bottom: 20px;
+    position: relative;
+    animation: fadeInDown 1s ease-in-out;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.product-card {
+    background: #2a2a2a;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px rgba(255, 153, 0, 0.3);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    box-shadow: 0px 4px 10px rgba(255, 153, 0, 0.3);
+}
+
+.product-card h3 {
+    font-size: 20px;
+    color: #ffcc00;
+}
+
+.product-card p {
+    font-size: 16px;
+    color: #e9e8e4;
+    margin: 10px 0;
+}
+
+.product-price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ff9900;
+}
+
+.buy-btn {
+    background: #ffcc00;
+    border: none;
+    padding: 10px 18px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0px 4px 10px rgba(255, 153, 0, 0.5);
+    transition: 0.3s;
+}
+
+.buy-btn:hover {
+    background: #ff9900;
+    transform: scale(1.05);
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 15px rgba(255, 153, 0, 0.7);
+}
+
+
+
+/* Product & Review Cards */
+/* Reviews Section */
+/* Reviews Section */
+/* Reviews Section */
+/* Reviews Section */
+.reviews-section {
+    padding: 60px 10%;
+    font-family: 'Poppins', sans-serif;
+    color: #e9e8e4;
+}
+
+.reviews-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #ffcc00; /* Gold accent for header */
+}
+
+/* Review Cards */
+.reviews {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 0 15px;
+}
+
+/* Individual Review Card */
+.review-card {
+  
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    color: #e9e8e4;
+    text-align: center;
+}
+
+/* Reviewer's Profile Image */
+.reviewer-img {
+    width: 80px; /* Adjust size */
+    height: 80px;
+    border-radius: 50%; /* Circular shape */
+    margin-bottom: 15px;
+    object-fit: cover;
+    border: 3px solid #ffcc00; /* Optional: add border to image */
+}
+
+/* Reviewer Info */
+.reviewer-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.reviewer-details {
+    font-size: 0.95rem;
+    text-align: left;
+    margin-left: 15px;
+}
+
+.reviewer-name {
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #ffcc00;
+}
+
+.reviewer-location, .review-date {
+    color: hsl(0, 21%, 95%);
+    font-size: 0.9rem;
+}
+
+/* Review Rating Stars */
+.review-rating {
+    margin-top: 10px;
+}
+
+.star {
+    font-size: 1.5rem;
+    color: hsl(0, 18%, 97%);
+    margin-right: 5px;
+}
+
+.star.filled {
+    color: gold;
+}
+
+.star.empty {
+    color: #ccc;
+}
+
+/* Review Text */
+.review-text {
+    font-size: 1rem;
+    color: #ddd;
+    margin-top: 15px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* Hover Effect on Review Card */
+.review-card:hover {
+    transform: translateY(-10px);
+}
+#about {
+      /* Dark chocolate theme */
+    color: #f2e6d6;  /* Light cream color for text */
+    padding: 50px 0;
+    text-align: center;
+    position: relative;
+}
+
+.about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.about-text {
+    max-width: 500px;
+    font-family: 'Arial', sans-serif;
+}
+
+.about-text h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.about-text ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.about-text ul li {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #c38e60;  /* Warm golden color */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #9c6e48;  /* Darker golden on hover */
+}
+
+.about-image {
+    position: relative;
+    max-width: 400px;  /* Adjust the image width */
+    width: 100%;
+    height: 300px;
+    border-radius: 50%;  /* Circular border radius */
+    overflow: hidden;
+    background: linear-gradient(135deg, #9e2a2f, #9c6e48); /* Gradient border background */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);  /* Soft shadow around the image */
+    transition: transform 0.3s ease;
+}
+
+.about-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  /* Ensures the image fills the circle while maintaining aspect ratio */
+    transition: transform 0.3s ease;
+}
+
+.about-image:hover img {
+    transform: scale(1.1);  /* Slight zoom effect on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-text {
+        max-width: 100%;
+    }
+
+    .about-image {
+        margin-top: 20px;
+    }
+}
+
+
+
+/* Contact Form */
+#contact {
+    /* Dark chocolate theme */
+    color: #f2e6d6;  /* Light cream color for text */
+    padding: 50px 20px;
+    text-align: center;
+    position: relative;
+}
+
+h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #f2e6d6;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+     /* Slightly lighter dark background */
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.form-group {
+    position: relative;
+}
+
+label {
+    font-size: 16px;
+    color: #e1dfdd;
+    margin-bottom: 8px;
+    display: block;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    /* Golden border */
+    border-radius: 5px;
+    background-color: #f7f1ee;
+    color: #090908;
+    outline: none;
+    transition: all 0.3s;
+}
+
+input:focus {
+    border-color: #c38e60;  /* Lighter golden on focus */
+    box-shadow: 0 0 5px rgba(19, 18, 18, 0.5);
+}
+
+button.contact-btn {
+    padding: 12px 20px;
+    background-color: #e87816;  /* Golden color for the button */
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button.contact-btn:hover {
+    background-color: #fb102f;  /* Darker golden on hover */
+}
+
+@media (max-width: 768px) {
+    form {
+        width: 90%;  /* Full width on mobile */
+    }
+}
+
+/* Blog Section */
+#blog {
+    text-align: center;
+    padding: 40px 10%;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 18px;
+    background: #000;
+    color: #ffcc00;
+    font-size: 14px;
+}

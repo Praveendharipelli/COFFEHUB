@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Hub</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Coffee Hub</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#review">Review</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="#blog">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="home" class="parallax">
+        <h2>Welcome to Coffee Hub</h2>
+        <p>Experience the finest coffee with us!</p>
+        <button class="floating-btn">Order Now</button>
+    </section>
+    
+    <section id="menu">
+        <h2>Our Special Menu</h2>
+        <button class="arrow arrow-left" onclick="scrollLeft()">&#10094;</button>
+        <div class="menu-slider">
+            <div class="menu-item">
+                <img src="images/Cappuccino.jpg" alt="Espresso">
+                <h3>Espresso</h3>
+                <p>Strong and bold coffee shot.</p>
+            </div>
+            <div class="menu-item">
+                <img src="images/Espresso.jpg" alt="Cappuccino">
+                <h3>Cappuccino</h3>
+                <p>Rich espresso with frothy milk.</p>
+            </div>
+            <div class="menu-item">
+                <img src="images/Latte.jpg" alt="Latte">
+                <h3>Latte</h3>
+                <p>Smooth espresso with steamed milk.</p>
+            </div>
+            <div class="menu-item">
+                <img src="images/Mocha.jpg" alt="Mocha">
+                <h3>Mocha</h3>
+                <p>Espresso with chocolate and milk.</p>
+            </div>
+        </div>
+        <button class="arrow arrow-right" onclick="scrollRight()">&#10095;</button>
+    </section>
+    
+    
+    <section id="products" class="product-section">
+        <h2 class="section-title">Our Premium Coffee Collection</h2>
+        <div class="product-grid">
+            <!-- Arabica Beans -->
+            <div class="product-card">
+                <img src="images/Arabica.jpg" alt="Arabica Beans" class="product-image">
+                <h3>Arabica Beans</h3>
+                <p class="price">$15.99</p>
+                <button class="buy-now">Buy Now</button>
+            </div>
+            
+            <!-- Robusta Beans -->
+            <div class="product-card">
+                <img src="images/Arabica (2).jpg" alt="Robusta Beans" class="product-image">
+                <h3>Robusta Beans</h3>
+                <p class="price">$12.99</p>
+                <button class="buy-now">Buy Now</button>
+            </div>
+            
+            <!-- Cold Brew Bottles -->
+            <div class="product-card">
+                <img src="images/ColdBrew.jpg" alt="Cold Brew Bottles" class="product-image">
+                <h3>Cold Brew Bottles</h3>
+                <p class="price">$8.99</p>
+                <button class="buy-now">Buy Now</button>
+            </div>
+            
+            <!-- French Press -->
+            <div class="product-card">
+                <img src="images/French.jpg" alt="French Press" class="product-image">
+                <h3>French Press</h3>
+                <p class="price">$25.99</p>
+                <button class="buy-now">Buy Now</button>
+            </div>
+        </div>
+    </section>
+    
+    <section id="review" class="reviews-section">
+        <div class="container">
+            <h2>REVIEWS</h2>
+            <div class="reviews">
+                <!-- Review 1 -->
+                <div class="review-card">
+                    <div class="reviewer-info">
+                        <img src="./images/john.jpg" alt="Reviewer 1" class="reviewer-img">
+                        <div class="reviewer-details">
+                            <p class="reviewer-name">John Doe</p>
+                            <p class="reviewer-location">New York, NY</p>
+                            <p class="review-date">March 10, 2025</p>
+                        </div>
+                    </div>
+                    <div class="review-rating">
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                    </div>
+                    <p class="review-text">The coffee here is amazing! I visit every morning for my daily cup. The staff is friendly, and the atmosphere is cozy!</p>
+                </div>
+        
+                <!-- Review 2 -->
+                <div class="review-card">
+                    <div class="reviewer-info">
+                        <img src="./images/david.jpg" alt="Reviewer 2" class="reviewer-img">
+                        <div class="reviewer-details">
+                            <p class="reviewer-name">david Smith</p>
+                            <p class="reviewer-location">Los Angeles, CA</p>
+                            <p class="review-date">March 9, 2025</p>
+                        </div>
+                    </div>
+                    <div class="review-rating">
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star empty">★</span>
+                    </div>
+                    <p class="review-text">Love the ambiance and the variety of coffees offered. Only wish they had more vegan snack options!</p>
+                </div>
+        
+                <!-- Review 3 (New) -->
+                <div class="review-card">
+                    <div class="reviewer-info">
+                        <img src="./images/john.jpg" alt="Reviewer 3" class="reviewer-img">
+                        <div class="reviewer-details">
+                            <p class="reviewer-name">Mark Johnson</p>
+                            <p class="reviewer-location">Chicago, IL</p>
+                            <p class="review-date">March 8, 2025</p>
+                        </div>
+                    </div>
+                    <div class="review-rating">
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star empty">★</span>
+                        <span class="star empty">★</span>
+                    </div>
+                    <p class="review-text">Great place to grab a coffee on the go. I love their cold brew, but the seating area could be a bit more spacious.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+      
+    
+    <section id="about">
+        <div class="about-container">
+            <div class="about-text">
+                <h2>About Us</h2>
+                <p>At Coffee Hub, we are dedicated to serving the best coffee made from premium quality beans. Our team is passionate about delivering the perfect cup, whether you prefer a rich espresso or a smooth cold brew. Join us in our mission to create a welcoming space for coffee lovers!</p>
+                <ul>
+                    <li><strong>Quality Beans:</strong> Only the best for our customers.</li>
+                    <li><strong>Expert Baristas:</strong> Crafting every cup with care.</li>
+                    <li><strong>Community:</strong> Building a place to connect over great coffee.</li>
+                </ul>
+                <a href="#contact" class="cta-button">Visit Us</a>
+            </div>
+            <div class="about-image">
+                <img src="./images/Latte.jpg" alt="Coffee Hub Interior" />
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+    
+            <button type="submit" class="contact-btn">Submit</button>
+        </form>
+    </section>
+    
+    
+    
+    <section id="blog">
+        <h2>Latest Blogs</h2>
+        <p>Stay tuned for coffee tips, recipes, and more!</p>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Coffee Hub. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
